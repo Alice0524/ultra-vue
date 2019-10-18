@@ -2,17 +2,17 @@
 export const appRouter = {
   path: '/',
   name: 'root',
-  //redirect: '',
-  component: () => import('../views/home/HelloWorld.vue'),
+  redirect: 'home',
+  component: () => import('../views/index.vue'),
   children:
     [
-      // {
-      //   path: 'home',
-      //   name: 'home',
-      //   icon: 'home',
-      //   label: '首页',
-      //   component: () => import('../views/home'),
-      // },
+      {
+        path: 'home',
+        name: 'home',
+        icon: 'home',
+        label: '首页',
+        component: () => import('../views/home/HelloWorld.vue'),
+      },
      
     ]
 }

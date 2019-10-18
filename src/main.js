@@ -12,6 +12,8 @@ import axios from './utils/http'
 import VueAxios from 'vue-axios'
 import 'view-design/dist/styles/iview.css';
 
+//引入 lib-flexible
+import  'lib-flexible';
 
 //注册全局组件
 // import PTable from  "./components/table/PTable.vue"
@@ -45,6 +47,5 @@ new Vue({
   router,
   i18n,
   store,
-  components: { App },
-  template: '<App/>'
+  render: h => h(App),
 })

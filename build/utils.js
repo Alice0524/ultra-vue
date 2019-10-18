@@ -21,7 +21,13 @@ exports.cssLoaders = function (options) {
       sourceMap: options.sourceMap
     }
   }
-
+ const px2remLoader = {
+    loader : 'px2rem-loader',
+    options : {
+      //这个参数是通过psd设计稿的  宽度 / 10 来计算
+      remUnit : 108  
+    }
+  }
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
@@ -31,7 +37,8 @@ exports.cssLoaders = function (options) {
 
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
-    const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
+    const loaders = [cssLoader, px2remLoader];
+    //const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
 
     if (loader) {
       loaders.push({
