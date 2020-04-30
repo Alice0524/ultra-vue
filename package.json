@@ -13,7 +13,7 @@
     "animejs": "^3.1.0",
     "axios": "^0.19.0",
     "babel-polyfill": "^6.26.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "js-cookie": "^2.2.1",
     "jssha": "^2.3.1",
     "less": "^3.10.3",
