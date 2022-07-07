@@ -19,7 +19,7 @@
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "lib-flexible": "^0.3.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "open-browser-webpack-plugin": "0.0.5",
     "qs": "^6.8.0",
     "view-design": "^4.0.1",
