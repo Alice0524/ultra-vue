@@ -21,7 +21,7 @@
     "lib-flexible": "^0.3.2",
     "moment": "^2.24.0",
     "open-browser-webpack-plugin": "0.0.5",
-    "qs": "^6.8.0",
+    "qs": "^6.9.7",
     "view-design": "^4.0.1",
     "vue": "^2.5.2",
     "vue-axios": "^2.1.4",
